@@ -2,3 +2,6 @@ srms
 srms.exe
 *.o
 students.dat
+students.txt
+students.csv
+.srms_session

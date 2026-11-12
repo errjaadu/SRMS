@@ -1,6 +1,7 @@
 id,name,age,gender,course,department,semester,phone,subject1,marks1,subject2,marks2,subject3,marks3,subject4,marks4,subject5,marks5
-101,Rahul Kumar,19,Male,BTech,CSE,1,9876543210,Mathematics,85,Physics,78,Chemistry,82,Programming,95,English,88
-102,Priya Sharma,20,Female,BTech,CSE,2,9876543211,Mathematics,92,Physics,89,Chemistry,86,Programming,96,English,90
-103,Amit Singh,19,Male,BTech,ECE,1,9876543212,Mathematics,75,Physics,80,Chemistry,72,Electronics,85,English,78
-104,Neha Verma,18,Female,BTech,ME,1,9876543213,Mathematics,88,Physics,91,Chemistry,79,Mechanics,84,English,87
-105,Ankit Raj,21,Male,BTech,CSE,3,9876543214,Mathematics,65,Physics,72,Chemistry,70,Programming,81,English,75
+101,Rahul Kumar,19,Male,BTech,CSE,1,9876543210,Mathematics,85.00,Physics,78.00,Chemistry,82.00,Programming,95.00,English,88.00
+102,Priya Sharma,20,Female,BTech,CSE,2,9876543211,Mathematics,92.00,Physics,89.00,Chemistry,86.00,Programming,96.00,English,90.00
+103,Amit Singh,19,Male,BTech,ECE,1,9876543212,Mathematics,75.00,Physics,80.00,Chemistry,72.00,Electronics,85.00,English,78.00
+104,Neha Verma,18,Female,BTech,ME,1,9876543213,Mathematics,88.00,Physics,91.00,Chemistry,79.00,Mechanics,84.00,English,87.00
+105,Ankit Raj,21,Male,BTech,CSE,3,9876543214,Mathematics,65.00,Physics,72.00,Chemistry,70.00,Programming,81.00,English,75.00
+106,DTC ka chhatra,19,Male,BTech,CSE,8,9513578525,Mathematics,86.00,Physics,89.00,Chemistry,78.00,Programming,99.00,English,72.00

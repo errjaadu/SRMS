@@ -1,5 +1,5 @@
 STUDENT RECORD MANAGEMENT SYSTEM
-Total records: 5
+Total records: 6
 
 ========================================
 ID: 101
@@ -91,3 +91,21 @@ Subjects and marks:
 Total: 363.00/500
 Percentage: 72.60%
 Grade: α−
+========================================
+ID: 106
+Name: DTC ka chhatra
+Age: 19
+Gender: Male
+Course: BTech
+Department: CSE
+Semester: 8
+Phone: 9513578525
+Subjects and marks:
+  Mathematics: 86.00/100
+  Physics: 89.00/100
+  Chemistry: 78.00/100
+  Programming: 99.00/100
+  English: 72.00/100
+Total: 424.00/500
+Percentage: 84.80%
+Grade: α
