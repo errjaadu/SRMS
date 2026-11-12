@@ -154,6 +154,7 @@ void displayHelp(void)
 
     printf("\nOTHER COMMANDS:\n");
     printf("  srms --stats\n");
+    printf("  srms --import [csv_file]\n");
     printf("  srms --export\n");
 
     printf("\nNote: Protected commands require an active session.\n");
@@ -456,6 +457,21 @@ int handleCommandLine(int argc, char *argv[])
         }
 
         displayStatistics(students, count);
+        return 0;
+    }
+
+    /* CSV import (merges records; existing IDs are skipped) */
+
+    if (strcmp(argv[1], "--import") == 0)
+    {
+        const char *filename = argc == 3 ? argv[2] : "students.csv";
+        if (argc > 3)
+        {
+            printf("Usage: srms --import [CSV_FILE]\n");
+            return 1;
+        }
+        if (importFromCSV(students, &count, filename) > 0)
+            saveChanges(students, count);
         return 0;
     }
 

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "student.h"
 #include "student_ops.h"
@@ -39,6 +40,11 @@ static void saveAndExport(Student students[], int count)
             printf("Text export updated successfully.\n");
         else
             printf("Warning: Text export failed.\n");
+
+        if (exportToCSV(students, count, "students.csv"))
+            printf("CSV file updated successfully.\n");
+        else
+            printf("Warning: CSV export failed.\n");
     }
     else
     {
@@ -79,7 +85,8 @@ static void runInteractiveMode(void)
         printf("8.  Filter Records\n");
         printf("9.  Statistics Dashboard\n");
         printf("10. Export Records\n");
-        printf("11. Logout and Exit\n");
+        printf("11. Import Records from CSV\n");
+        printf("12. Logout and Exit\n");
         printf("----------------------------------------\n");
         printf("Enter choice: ");
 
@@ -223,13 +230,31 @@ static void runInteractiveMode(void)
                 break;
 
             case 10:
-                if (exportToText(students, count))
-                    printf("Export completed successfully.\n");
+                if (exportToText(students, count) &&
+                    exportToCSV(students, count, "students.csv"))
+                    printf("Text and CSV exports completed successfully.\n");
                 else
-                    printf("Export failed.\n");
+                    printf("One or more exports failed.\n");
                 break;
 
             case 11:
+            {
+                char filename[260];
+                size_t len;
+                printf("CSV file path (press Enter for students.csv): ");
+                if (!fgets(filename, sizeof filename, stdin)) {
+                    printf("Could not read file path.\n");
+                    break;
+                }
+                len = strlen(filename);
+                if (len && filename[len - 1] == '\n') filename[len - 1] = '\0';
+                if (filename[0] == '\0') strcpy(filename, "students.csv");
+                if (importFromCSV(students, &count, filename) > 0)
+                    saveAndExport(students, count);
+                break;
+            }
+
+            case 12:
                 printf("\nSaving records before exit...\n");
                 saveAndExport(students, count);
                 logout();
@@ -240,7 +265,7 @@ static void runInteractiveMode(void)
                 printf("Invalid menu choice. Try again.\n");
         }
 
-    } while (choice != 11);
+    } while (choice != 12);
 }
 
 int main(int argc, char *argv[])

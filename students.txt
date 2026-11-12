@@ -1,0 +1,93 @@
+STUDENT RECORD MANAGEMENT SYSTEM
+Total records: 5
+
+========================================
+ID: 101
+Name: Rahul Kumar
+Age: 19
+Gender: Male
+Course: BTech
+Department: CSE
+Semester: 1
+Phone: 9876543210
+Subjects and marks:
+  Mathematics: 85.00/100
+  Physics: 78.00/100
+  Chemistry: 82.00/100
+  Programming: 95.00/100
+  English: 88.00/100
+Total: 428.00/500
+Percentage: 85.60%
+Grade: α
+========================================
+ID: 102
+Name: Priya Sharma
+Age: 20
+Gender: Female
+Course: BTech
+Department: CSE
+Semester: 2
+Phone: 9876543211
+Subjects and marks:
+  Mathematics: 92.00/100
+  Physics: 89.00/100
+  Chemistry: 86.00/100
+  Programming: 96.00/100
+  English: 90.00/100
+Total: 453.00/500
+Percentage: 90.60%
+Grade: α+
+========================================
+ID: 103
+Name: Amit Singh
+Age: 19
+Gender: Male
+Course: BTech
+Department: ECE
+Semester: 1
+Phone: 9876543212
+Subjects and marks:
+  Mathematics: 75.00/100
+  Physics: 80.00/100
+  Chemistry: 72.00/100
+  Electronics: 85.00/100
+  English: 78.00/100
+Total: 390.00/500
+Percentage: 78.00%
+Grade: α−
+========================================
+ID: 104
+Name: Neha Verma
+Age: 18
+Gender: Female
+Course: BTech
+Department: ME
+Semester: 1
+Phone: 9876543213
+Subjects and marks:
+  Mathematics: 88.00/100
+  Physics: 91.00/100
+  Chemistry: 79.00/100
+  Mechanics: 84.00/100
+  English: 87.00/100
+Total: 429.00/500
+Percentage: 85.80%
+Grade: α
+========================================
+ID: 105
+Name: Ankit Raj
+Age: 21
+Gender: Male
+Course: BTech
+Department: CSE
+Semester: 3
+Phone: 9876543214
+Subjects and marks:
+  Mathematics: 65.00/100
+  Physics: 72.00/100
+  Chemistry: 70.00/100
+  Programming: 81.00/100
+  English: 75.00/100
+Total: 363.00/500
+Percentage: 72.60%
+Grade: α−
